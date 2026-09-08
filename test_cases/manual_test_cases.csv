@@ -1,0 +1,9 @@
+ID,Type,Scenario,Precondition,Steps,Expected Result,Priority
+TC-001,Smoke,Application launches,Latest build is running,Open the base URL,Application loads without a fatal error,High
+TC-002,Functional,Page title is present,Application is open,Open landing page and inspect browser title,Title is not blank,Medium
+TC-003,Functional,Main content is visible,Application is open,Load landing page and inspect body,Visible page content is displayed,High
+TC-004,Compatibility,Responsive mobile layout,Application is open,Resize viewport to mobile width,Core content remains readable and usable,Medium
+TC-005,Usability,Keyboard navigation,Application is open,Use Tab and Shift+Tab,Focus order is logical and visible,Medium
+TC-006,Negative,Invalid route handling,Application is running,Open a non-existent route,Controlled 404/error page is shown,Medium
+TC-007,Regression,No broken landing-page images,Landing page contains images,Load page and inspect image elements,Images load or use valid fallback,Low
+TC-008,Non-Functional,Basic response time,Stable test environment,Open landing page / run request,Response meets the team's agreed baseline,Medium
