@@ -1,0 +1,40 @@
+@model IEnumerable<TaskMvc.Models.TaskItem>
+
+@{
+    ViewData["Title"] = "Tasks";
+}
+
+<h1>Task MVC Practice</h1>
+
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+
+    <input name="Title"
+           maxlength="80"
+           required
+           placeholder="New task" />
+
+    <button type="submit">Add</button>
+</form>
+
+<ul>
+@foreach (var task in Model)
+{
+    <li>
+        @(task.IsComplete ? "✓" : "○") @task.Title
+
+        <form asp-action="Toggle"
+              method="post"
+              style="display:inline">
+
+            @Html.AntiForgeryToken()
+
+            <input type="hidden"
+                   name="id"
+                   value="@task.Id" />
+
+            <button type="submit">Toggle</button>
+        </form>
+    </li>
+}
+</ul>

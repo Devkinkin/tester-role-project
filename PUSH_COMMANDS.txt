@@ -1,0 +1,38 @@
+cd "C:\Users\Admin ji\Documents\GitHub\tester-role-project"
+
+git status
+
+git add developer/week1_task_console
+git commit -m "Add consolidated week 1 C# SQLite CRUD exercise"
+
+git add developer/week2_task_api
+git commit -m "Add consolidated week 2 ASP.NET Core API exercise"
+
+git add developer/week3_task_mvc
+git commit -m "Add consolidated week 3 MVC and Docker exercise"
+
+git add tester/week4_manual
+git commit -m "Add week 4 manual testing work"
+
+git add tester/week5_selenium
+git commit -m "Add Selenium Python login automation"
+
+git add tester/week6_api_testing
+git commit -m "Add Python API and HTTP testing"
+
+git add tester/week7_regression_ci .github/workflows/python-tests.yml
+git commit -m "Add regression and CI testing scripts"
+
+git add tester/week8_bdd_performance
+git commit -m "Add BDD and performance testing scripts"
+
+git add tester/week9_reporting
+git commit -m "Add QA reporting script"
+
+git add tester/week10_planned
+git commit -m "Add planned final QA tasks"
+
+git add README.md INDIVIDUAL_CONTRIBUTION_MAP.md requirements.txt .gitignore
+git commit -m "Organise complete individual contribution"
+
+git push origin main

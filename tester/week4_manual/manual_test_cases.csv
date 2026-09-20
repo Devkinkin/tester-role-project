@@ -1,0 +1,16 @@
+ID,Type,Scenario,Expected Result
+TC-001,Smoke,Login page loads,Login form is visible
+TC-002,Functional,Username field available,Username field is visible/enabled
+TC-003,Functional,Password field available,Password field is visible/masked
+TC-004,Functional,Valid login,User reaches authenticated area
+TC-005,Negative,Invalid password,Login rejected with error
+TC-006,Negative,Invalid username,Login rejected with error
+TC-007,Negative,Both fields empty,Validation/error shown
+TC-008,Negative,Username empty,Username error shown
+TC-009,Negative,Password empty,Password error shown
+TC-010,Boundary,Very long username,No crash/layout break
+TC-011,Boundary,Very long password,No crash/layout break
+TC-012,Security basic,Password masking,Password remains masked
+TC-013,Usability,Keyboard navigation,Logical focus order
+TC-014,Compatibility,Narrow/mobile viewport,Form remains usable
+TC-015,Regression,Repeat valid login after change,Previously working login still succeeds

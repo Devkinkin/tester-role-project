@@ -1,8 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.db
+.vscode/
+.idea/
 bin/
 obj/
-.vs/
 TestResults/
-*.user
-*.suo
-.env
-.DS_Store

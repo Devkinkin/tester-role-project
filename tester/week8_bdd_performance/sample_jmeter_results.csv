@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,success
+1,120,GET /posts/1,200,true
+2,135,GET /posts/1,200,true
+3,110,GET /posts/1,200,true
+4,180,GET /posts/1,200,true
+5,155,GET /posts/1,200,true
+6,240,GET /posts/1,500,false
+7,145,GET /posts/1,200,true
+8,170,GET /posts/1,200,true
+9,125,GET /posts/1,200,true
+10,160,GET /posts/1,200,true
